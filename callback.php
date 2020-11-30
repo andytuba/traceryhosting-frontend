@@ -30,7 +30,7 @@ function login_failure()
     }
 
     session_destroy();
-    die('Error! Couldn\'t log in. <a href="//cheapbotsdonequick.com">Retry</a>');
+    die('Error! Couldn\'t log in. <a href=".">Retry</a>');
 }
 
 
