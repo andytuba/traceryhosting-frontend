@@ -17,7 +17,8 @@ else {
 $host  = $_SERVER['HTTP_HOST'];
 $uri   = rtrim(dirname($_SERVER['PHP_SELF']), '/\\');
 $extra = 'callback.php';
-header("Location: $protocol$host$uri/$extra");
+// TODO: why is the following line here? seems like guaranteed failure
+// header("Location: $protocol$host$uri/$extra");
 
 define('OAUTH_CALLBACK', "$protocol$host$uri/$extra");
 
