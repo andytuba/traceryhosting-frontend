@@ -1,10 +1,9 @@
 <?php
 
-
-require "twitteroauth/autoload.php";
+require __DIR__ . '/vendor/autoload.php';
 require "credentials.php";
 
-use Abraham\TwitterOAuth\TwitterOAuth;
+use Abraham\TwitterOAuth\TwitterOAuth as TwitterOAuth;
 
 if (isset($_SERVER['HTTPS']) &&
     ($_SERVER['HTTPS'] == 'on' || $_SERVER['HTTPS'] == 1) ||

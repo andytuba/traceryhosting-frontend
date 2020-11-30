@@ -1,9 +1,9 @@
 <?php
 
-require "twitteroauth/autoload.php";
+require __DIR__ . '/vendor/autoload.php';
 require "credentials.php";
 
-use Abraham\TwitterOAuth\TwitterOAuth;
+use Abraham\TwitterOAuth\TwitterOAuth as TwitterOAuth;
 
 $connection = new TwitterOAuth(CONSUMER_KEY, CONSUMER_SECRET);
 
